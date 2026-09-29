@@ -1,0 +1,39 @@
+﻿# --- Secrets / local credentials ---
+**/terraform.tfvars
+**/*.p8
+**/terraform_conn.sql
+.env
+.env.*
+
+# --- Terraform runtime ---
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/*.tfstate.backup
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- dbt generated ---
+**/target/
+**/dbt_packages/
+**/logs/
+**/dbt.log
+
+# --- Nested git (publish as one repo) ---
+food-delivery-dwh/food_delivery_dbt/.git/
+
+# --- Unrelated / local notes ---
+ProjectInsights.txt
+
+# --- Oversized sample data (keep smaller CSVs) ---
+DATA/Sample_Swiggy_Data/08-order-item-csv/08.01-initial-load/order-item-initial-v2.csv
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

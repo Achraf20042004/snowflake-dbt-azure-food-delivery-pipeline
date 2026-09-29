@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fact_order_item
+    columns:
+      - name: order_item_id
+        tests:
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+
+  - name: dim_date
+    columns:
+      - name: date_dim_hk
+        tests:
+          - unique
+          - not_null
+      - name: calendar_date
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: stage_sch
+    database: SANDBOX
+    schema: STAGE_SCH
+    tables:
+      - name: restaurant
+      - name: location
+      - name: customer
+      - name: customeraddress
+      - name: delivery
+      - name: deliveryagent
+      - name: orders
+      - name: orderitem
+      - name: menu
